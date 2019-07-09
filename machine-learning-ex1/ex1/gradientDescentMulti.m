@@ -18,7 +18,9 @@ for iter = 1:num_iters
     %
 
 
-
+    h = X * theta; % hypothesis
+    % X' * (h - y) = sum((h - y) .* X)'
+    theta -= alpha * (1 / m) * (X' * (h - y));
 
 
 
