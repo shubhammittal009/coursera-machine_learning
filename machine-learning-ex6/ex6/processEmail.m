@@ -89,7 +89,7 @@ while ~isempty(email_contents)
     %               'action' appears. For example, if vocabList{18} =
     %               'action', then, you should add 18 to the word_indices 
     %               vector (e.g., word_indices = [word_indices ; 18]; ).
-    % 
+    %  
     % Note: vocabList{idx} returns a the word with index idx in the
     %       vocabulary list.
     % 
@@ -97,13 +97,13 @@ while ~isempty(email_contents)
     %       str2). It will return 1 only if the two strings are equivalent.
     %
 
-
-	for i = 1:length(vocabList)
-        if strcmp(vocabList{i}, str)
+    for i = 1:length(vocabList)
+        if strcmp(str,vocabList{i})
             word_indices = [word_indices; i];
             break;
         end
-    end
+    end        
+
 
     % =============================================================
 
